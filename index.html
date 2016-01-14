@@ -1,0 +1,88 @@
+<!doctype html>
+<html ng-app="omiyaApp">
+<head>
+	<title>Omiya-Sushi</title>
+	<link rel="stylesheet" type="text/css" href="styles/style.css"/>
+</head>
+<header>
+	<div>
+		<h1>OMIYA SUSHI</h1>
+	</div>
+	<nav class="navBar" align="center"> 
+        <div style="opacity=1.0;">
+        <hr />
+		 <a href="index.html">
+            ABOUT US
+        </a>
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="services.htm">
+            MENU
+        </a>
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="JS Tutorial/Ajax.html">
+            CONTACT US
+        </a>
+	    <hr />
+        </div> 
+    </div>
+</header>
+<body ng-init="list = ['http://images.indagare.com/wp-content/uploads/20150826160328/R-New-York-City-o-ya-04Kyoto-Style-Morel-Mushroom-Nigiri-by-Gentl-and-Hyers-620x413.jpg','http://images.indagare.com/wp-content/uploads/20150826160325/R-New-York-City-o-ya-02Fried-Kumamoto-Oyster-by-Gentl-and-Hyers-620x413.jpg','http://images.indagare.com/wp-content/uploads/20150826160327/R-New-York-City-o-ya-03Hamachi-Nigiri-with-Banana-Pepper-by-Gentl-and-Hyers-620x413.jpg']" >
+	<div class="container" ng-controller="nscdaAppController"> 
+		<div align="center">
+			<div class="half">
+				<input type="text" ng-model="newName" placeholder="Enter Your Name">
+				<input type="text" ng-model="newAge" placeholder="Enter Your Age">
+				<button ng-click="updateCustomers();" >Join Our Customer List</button> 
+				<p>
+					Welcome to our website, dear {{yourName}}!
+				</p>
+				<p>Our Customer List:</p>
+				<ul>
+					<li ng-repeat="person in customers">
+		                name: {{person.name}}, age: {{person.age}}
+		        	</li> 
+				</ul>
+			</div>
+		</div>
+		
+		
+
+		<hr \>
+
+		<div align="center">
+			<div id="slider">
+				<ul class="slides">
+					<li class="slide" ng-repeat="item in list">
+						<img src="{{item}}" width="720" height="400">
+					</li>
+					<li class="slide">
+						<img src="{{list[0]}}" width="720" height="400">
+					</li>
+				</ul>
+			</div>
+		</div>
+		
+		
+
+		
+		
+
+
+
+
+
+	</div>
+
+	
+	<script src="scripts/angular.min.js"></script>
+	<script src="jquery-1.11.3.min.js"></script>
+	<script src="scripts/index.js"></script>
+</body>
+<footer>
+	<hr \>
+		<h3>OMIYA SUSHI</h3>
+		<h3>2317 Ave U, Brooklyn, NY 11229</h3>
+		<h3>(718) 891-8808</h3>
+	<hr \>
+</footer>
+</html>

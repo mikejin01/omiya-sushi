@@ -1,0 +1,107 @@
+nav.navBar{
+	text-align: center;
+	background:rgba(255,255,255,0.9);
+	width: 100%;
+	height: 50px;
+	top:0px;
+}
+.centerContent{
+	text-align: center;
+}
+div.half{
+	width: 50%;
+}
+.container{
+	overflow: auto;
+	width: 800px;
+	margin: 0 auto; 
+	border: 5px solid #000000;
+	padding: 10px;
+}
+#slider {
+	width: 720px;
+	height: 400px;
+	overflow: hidden;
+}
+	
+#slider .slides {
+	display: block;
+	width: 6000px;
+	height: 400px;
+	margin: 0;
+	padding: 0;
+}
+	
+#slider .slide {
+	float: left;
+	list-style-type: none;
+	width: 720px;
+	height: 400px;
+}
+h1{ 
+	font-family: Georgia, Times, 'Times New Roman', serif;
+	text-align: center;
+}
+h3{
+	font-family: Georgia, Times, 'Times New Roman', serif;
+	text-align: center;
+}
+h4{
+	font-family: Georgia, Times, 'Times New Roman', serif;
+	text-align: center;
+}
+tr{
+	border: 1px solid #000000;
+	padding: 10px;
+}
+td{
+	border: 2px solid #000000;
+	padding: 10px;
+	width: 50%;
+	height: 100%;
+}
+td.news{
+	border: 0px solid #000000;
+	padding: 10px;
+	width: 50%;
+	height: 100%;
+}
+td.sideBar{
+	border: 0px solid #000000;
+	padding: 10px;
+	width: 25%;
+	height: 100%;
+	vertical-align: top;
+}
+td.menuBar{
+	border: 0px solid #000000;
+	padding: 10px;
+	width: 25%;
+	height: 100%;
+	vertical-align: top;
+}
+td.contentBar{
+	border: 0px solid #000000;
+	padding: 10px;
+	width: 75%;
+	height: 100%;
+	vertical-align: top;
+}
+img.floatLeft{
+	float: left;
+	width: 25%;
+}
+.clearLeft{
+	clear:left;
+}
+
+.allCaps{
+	text-transform: capitalize;
+}
+p.uppercase {
+    text-transform: uppercase;
+}
+a:visited {
+	text-decoration: none;
+	color:#000000;
+}

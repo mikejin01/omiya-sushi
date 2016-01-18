@@ -1,9 +1,18 @@
+body{
+	background-image: url("http://images.forwallpaper.com/files/thumbs/preview/16/169609__background-for-the-table-texture-color-black_p.jpg");
+}
 nav.navBar{
 	text-align: center;
-	background:rgba(255,255,255,0.9);
+	
 	width: 100%;
 	height: 50px;
 	top:0px;
+}
+header{
+	background-color: rgba(255,255,255,0.9);
+}
+footer{
+	background-color: rgba(255,255,255,0.9);
 }
 .centerContent{
 	text-align: center;
@@ -12,8 +21,9 @@ div.half{
 	width: 50%;
 }
 .container{
+	background-color: rgba(255,255,255,0.9);
 	overflow: auto;
-	width: 800px;
+	width: 1000px;
 	margin: 0 auto; 
 	border: 5px solid #000000;
 	padding: 10px;

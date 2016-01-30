@@ -6,31 +6,61 @@
 	<script src="scripts/jquery-1.11.3.min.js"></script>
 	<script src="scripts/angular.min.js"></script>
 </head>
-<body ng-init="list = ['http://images.indagare.com/wp-content/uploads/20150826160328/R-New-York-City-o-ya-04Kyoto-Style-Morel-Mushroom-Nigiri-by-Gentl-and-Hyers-620x413.jpg','http://images.indagare.com/wp-content/uploads/20150826160325/R-New-York-City-o-ya-02Fried-Kumamoto-Oyster-by-Gentl-and-Hyers-620x413.jpg','http://images.indagare.com/wp-content/uploads/20150826160327/R-New-York-City-o-ya-03Hamachi-Nigiri-with-Banana-Pepper-by-Gentl-and-Hyers-620x413.jpg']" >
+<body>
 	<div class="container">
-		
-			<div>
-				<h1>OMIYA SUSHI</h1>
-			</div>
-			<nav class="navBar" align="center"> 
-		        <div style="opacity=1.0;">
-		        <hr />
-				 <a href="index.html">
-		            ABOUT US
-		        </a>
-		        &nbsp;&nbsp;&nbsp;&nbsp;
-		        <a href="services.htm">
-		            MENU
-		        </a>
-		        &nbsp;&nbsp;&nbsp;&nbsp;
-		        <a href="JS Tutorial/Ajax.html">
-		            CONTACT US
-		        </a>
-			    <hr />
-		        </div> 
-		    </nav>
+		<header>
+			<table class="header">
+				<tr>
+					<td>
+						<h1>OMIYA SUSHI</h1>
+					</td>
+					<td>
+						<nav class="navBar" align="center"> 
+							<a href="index.html">
+					            HOME
+					        </a>
+					        &nbsp;&nbsp;&nbsp;&nbsp;
+					        <a href="services.htm">
+					            ABOUT
+					        </a>
+					        &nbsp;&nbsp;&nbsp;&nbsp;
+					        <a href="JS Tutorial/Ajax.html">
+					            MENU
+					        </a>
+					        &nbsp;&nbsp;&nbsp;&nbsp;
+					        <a href="JS Tutorial/Ajax.html">
+					            LOCATION
+					        </a>
+					        &nbsp;&nbsp;&nbsp;&nbsp;
+					        <a href="JS Tutorial/Ajax.html">
+					            CONTACT
+					        </a>
+					    </nav>
+					</td>
+				</tr>
+
+				
+			</table>
+			
+
+		</header>
 		
 		<div ng-controller="nscdaAppController"> 
+			<div slider align="center">
+				<div id="slider">
+					<ul class="slides">
+						<li class="slide" ng-repeat="item in imageList">
+							<img src="{{item.src}}" width="900" height="500">
+						</li>
+						<li class="slide">
+							<img src="{{imageList[0].src}}" width="900" height="500">
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<hr \>
+
 			<div align="center">
 				<div class="half">
 					<input type="text" ng-model="newName" placeholder="Enter Your Name">
@@ -48,31 +78,14 @@
 				</div>
 			</div>
 			
-			
-			<hr \>
-
-			<div align="center">
-				<div id="slider">
-					<ul class="slides">
-						<li class="slide" ng-repeat="item in list">
-							<img src="{{item}}" width="720" height="400">
-						</li>
-						<li class="slide">
-							<img src="{{list[0]}}" width="720" height="400">
-						</li>
-					</ul>
-				</div>
-			</div>
-			
-		</div>
-
-		
+	</div>
+		<footer>
 			<hr \>
 				<h3>OMIYA SUSHI</h3>
 				<h3>2317 Ave U, Brooklyn, NY 11229</h3>
 				<h3>(718) 891-8808</h3>
 			<hr \>
-		
+		</footer>
 	</div>
 	<script src="scripts/index.js"></script>
 </body>

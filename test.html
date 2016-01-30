@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+<head>
+	<title></title>
+	<script src="scripts/jquery-1.11.3.min.js"></script>
+	<script src="scripts/angular.min.js"></script>
+</head>
+<body ng-app="demoApp">
+  <div ng-controller = "homeCtrl">
+    <h1>{{title}}</h1>
+    <div ng-repeat = "friend in friends">
+      <contact-card id="$index" friend="friend" title="'Contacts'">
+         <h1>Contact Card</h1>
+      </contact-card>
+    </div>
+  </div>  
+   
+   //reusable compoments
+   //maniplate Dom
+   $scope // false by defult
+   //true new scope
+   //isolate scope
+  
+  //communicate between directives observer
+   
+  //dom wrapping jquery events
+  
+  //promoises $q
+  <script src="scripts/test.js"></script>
+</body>
+</html>
+
+</html>
